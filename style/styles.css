@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 200;
+}
+
+#contenedorPagina{
+    position: relative;
+    min-height: 100vh;
+}
+
+#contenidoPagina{
+    padding-bottom: 8rem;
+
+}
+
+/* Barra de navegación */
+
+header{
+    background-color: rgb(180, 186, 227);
+    padding: 15px 80px 20px 80px;
+    margin-top: 0;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas: "logo void btns";
+}
+
+.navIcon{
+    grid-area: logo;
+    cursor: pointer;
+    width: 320px;
+    display: flex;
+    flex-flow: raw nowrap;
+    align-items: center;
+}
+
+.navIcon img{
+    height: 60px;
+    width: 60px;
+    margin-right: 1.5rem;
+}
+
+.navIcon div{
+    font-size: 36px;
+}
+
+.navBtns{
+    grid-area: btns;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBtns li, a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 24px;
+}
+
+.navBtns a{
+    padding: 8px 14px 8px 14px;
+    transition: 200ms;
+}
+
+.navBtns a:hover{
+    background-color: rgba(255, 255, 255, 0.306);
+}
+
+/* Fin de barra de navegación */
+
+.content p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 80px 5px 80px;
+    text-align: justify;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+#portadaPrincipal h1{
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translate(-50%, 0%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#imgPortada{
+    width: 100%;
+    height: auto;
+}
+
+#btnAviones{
+    display: block;
+    padding: 5px 0 15px 0;
+    width: 100%;
+    color: black;
+    font-size: 22px;
+    background-color: rgb(121, 235, 255);
+    border-bottom: 3px solid rgb(21, 79, 89);
+    text-align: center;
+
+}
+
+#btnAviones a{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+#portadaPrincipal{
+    background-color: rgb(21, 79, 89);
+}
+
+.bienvenida{
+    margin: 3rem 2rem 5rem 2rem;
+}
+
+.bienvenida h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.pasosRenta{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pasosRenta div{
+    width: 33.3%;
+}
+
+.pasosRenta h3{
+    font-size: 28px;
+    text-align: center;
+}
+
+.pasosRenta p{
+    color:rgb(124, 124, 124);
+}
+
+.presentacion{
+    background-color: rgb(224, 236, 255);
+    padding-top: 3rem;
+}
+
+.whoAreWe{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "imagen texto";
+}
+
+.whoAreWe img{
+    height: 70vh;
+    width: 70vh;
+    grid-area: imagen;
+}
+
+.historia{
+    margin: 3rem 3rem 2rem 3rem;
+    grid-area: texto;
+}
+
+.historia h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.historia p{
+    color:rgb(124, 124, 124);
+}
+
+
+
+footer{
+    background-color:rgb(90, 93, 111);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-size: 18px;
+}
+
+.galeria img{
+    width: 100%;
+    height: auto;
+}
+
+.contentPagina{
+    text-align: center;
+}
+
+.contentPagina h1{
+    margin: 1rem 0 1rem 0;
+}
+
+.listaAviones figure img{
+    width: 100%;
+    height: auto;
+}
+
+.listaAviones figure{
+    margin: 1rem 0 2rem 0;
+}
+
+.tarifas p{
+    text-align: center;
+}
+
+.tarifas section{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.subrayado{
+    border-bottom: 1px solid black;
+}
+
+.formularioContacto label{
+    display: block;
+    margin: 1rem 0 1rem 0;
+}
+
+.formularioContacto textarea{
+    resize: none;
+}
+
+.formularioContacto input{
+    width: 30rem;
+    height: 2rem;
+}
+
+.formularioContacto textarea{
+    width: 30rem;
+    height: 10rem;
+}
+
+.formularioContacto input, textarea{
+    font-size: 1.3rem;
+}
