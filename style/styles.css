@@ -18,29 +18,30 @@ body{
 
 #contenidoPagina{
     padding-bottom: 8rem;
-
 }
 
 /* Barra de navegación */
 
 header{
     background-color: rgb(180, 186, 227);
-    padding: 15px 80px 20px 80px;
     margin-top: 0;
 }
 
 header nav{
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-areas: "logo void btns";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "logo" "btns";
+    row-gap: 1rem;
 }
 
 .navIcon{
     grid-area: logo;
+    justify-items: flex-end;
     cursor: pointer;
     width: 320px;
     display: flex;
-    flex-flow: raw nowrap;
+    flex-flow: row nowrap;
     align-items: center;
 }
 
@@ -54,28 +55,251 @@ header nav{
     font-size: 36px;
 }
 
-.navBtns{
-    grid-area: btns;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+.navBtns li{
+    justify-items: space-between;
     align-items: center;
+    flex-flow: row nowrap;
 }
 
 .navBtns li, a{
     text-decoration: none;
     list-style: none;
     color: black;
-    font-size: 24px;
-}
-
-.navBtns a{
-    padding: 8px 14px 8px 14px;
-    transition: 200ms;
+    font-size: 20px;
 }
 
 .navBtns a:hover{
     background-color: rgba(255, 255, 255, 0.306);
+}
+
+@media(min-width: 0px){
+
+    header{
+        padding: 15px 7px 20px 7px;
+    }
+
+    .navIcon img{
+        height: 30px;
+        width: 30px;
+        margin-right: 1rem;
+    }
+    
+    .navIcon div{
+        font-size: 20px;
+    }
+    
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .navBtns a{
+        padding: 8px 3px 8px 3px;
+        transition: 200ms;
+        margin: 0 2px 0 2px;
+    }
+
+    .navBtns li, a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 416px){
+
+    header{
+        padding: 15px 15px 20px 15px;
+    }
+
+    .navIcon img{
+        height: 30px;
+        width: 30px;
+        margin-right: 1rem;
+    }
+    
+    .navIcon div{
+        font-size: 20px;
+    }
+    
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .navBtns a{
+        padding: 8px 6px 8px 6px;
+        transition: 200ms;
+        margin: 0 3px 0 3px;
+    }
+
+    .navBtns li, a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 468px){
+
+    header{
+        padding: 15px 15px 20px 15px;
+    }
+
+    .navIcon img{
+        height: 50px;
+        width: 50px;
+        margin-right: 1rem;
+    }
+    
+    .navIcon div{
+        font-size: 30px;
+    }
+    
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .navBtns a{
+        padding: 8px 7px 8px 7px;
+        transition: 200ms;
+        margin: 0 3px 0 3px;
+    }
+
+    .navBtns li, a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 594px){
+
+    header{
+        padding: 15px 45px 20px 45px;
+    }
+    
+    .navIcon img{
+        height: 60px;
+        width: 60px;
+        margin-right: 1.5rem;
+    }
+    
+    .navIcon div{
+        font-size: 36px;
+    }
+
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    
+    .navBtns a{
+        padding: 8px 7px 8px 7px;
+        transition: 200ms;
+        margin: 0 14px 0 14px;
+    }
+
+    .navBtns li, a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 22px;
+    }
+
+}
+
+@media(min-width: 750px){
+
+    header{
+        padding: 15px 45px 20px 45px;
+    }
+    
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    
+    .navBtns a{
+        padding: 8px 14px 8px 14px;
+        transition: 200ms;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .navIcon img{
+        height: 60px;
+        width: 60px;
+        margin-right: 1.5rem;
+    }
+    
+    .navIcon div{
+        font-size: 36px;
+    }
+    
+}
+
+@media(min-width: 1100px){
+
+    header{
+        padding: 15px 60px 20px 60px;
+    }
+
+    header nav{
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-areas: "logo void btns";
+    }
+    
+    .navIcon{
+        grid-area: logo;
+        justify-items: flex-end;
+        cursor: pointer;
+        width: 320px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    
+    .navBtns{
+        grid-area: btns;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .navBtns li, a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 24px;
+    }
+    
+    .navBtns a{
+        padding: 8px 14px 8px 14px;
+        transition: 200ms;
+        margin: 0 1rem 0 1rem;
+    }
 }
 
 /* Fin de barra de navegación */
@@ -92,30 +316,64 @@ header nav{
     font-size: 35px;
 }
 
-#portadaPrincipal h1{
+/* Inicio portada */
+
+.portadaPrincipal{
+    overflow: hidden;
+}
+
+.portadaPrincipal h1{
     text-transform: uppercase;
     position: absolute;
     left: 50%;
     margin-top: 2rem;
     transform: translate(-50%, 0%);
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     text-shadow: 2px 2px 8px black;
     margin-bottom: 0;
     padding: 0;
-}
-
-#imgPortada{
+    text-align: center;
     width: 100%;
-    height: auto;
 }
 
-#portadaPrincipal{
-    background-color: rgb(21, 79, 89);
+@media(min-width: 400px){
+    .portadaPrincipal h1{
+        font-size: 1.6rem;
+    }
 }
+
+@media(min-width: 730px){
+    .portadaPrincipal h1{
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 990px){
+    .portadaPrincipal h1{
+        font-size: 2.5rem;
+    }
+}
+
+.imgPortada{
+    width: 200%;
+    z-index: 1;
+    margin-left: -60%;
+}
+
+@media(min-width: 800px){
+    .imgPortada{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin: 0;
+    }
+}
+
+/* Fin Portada */
 
 .bienvenida{
-    margin: 3rem 2rem 5rem 2rem;
+    margin: 2rem 0rem 4rem 0rem;
 }
 
 .bienvenida h2{
@@ -126,12 +384,7 @@ header nav{
 .pasosRenta{
     margin-top: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.pasosRenta div{
-    width: 33.3%;
+    flex-direction: column;
 }
 
 .pasosRenta h3{
@@ -141,7 +394,36 @@ header nav{
 
 .pasosRenta p{
     color:rgb(124, 124, 124);
+    text-align: justify;
+    padding: 2rem;
 }
+
+@media(min-width: 800px){
+    .bienvenida{
+        margin: 3rem 2rem 5rem 2rem;
+    }
+
+    .pasosRenta{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .pasosRenta div{
+        width: 33.3%;
+    }
+
+    .pasosRenta p{
+        color:rgb(124, 124, 124);
+        width: auto;
+        text-align: justify;
+    }
+}
+
+/* Fin instrucciones */
+
+/* Inicio presentacion */
 
 .presentacion{
     background-color: rgb(224, 236, 255);
@@ -156,10 +438,21 @@ header nav{
 
 .whoAreWe{
     display: grid;
-    grid-template-columns: 35% 65%;
-    grid-template-areas: "imagen texto";
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen" "texto";
     height: 100%;
 }
+
+@media(min-width: 800px){
+    .whoAreWe{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-areas: "imagen texto";
+        height: 100%;
+    }
+}
+
+
 
 .whoAreWe div{
     margin-left: 2rem;
@@ -170,30 +463,62 @@ header nav{
 }
 
 .whoAreWe img{
-    height: 30vw;
-    width: 30vw;
+    margin-left: -1rem;
+    margin-top: 2rem;
+    height: 40vw;
+    width: auto;
+}
+
+@media(min-width: 800px){
+    .whoAreWe img{
+        height: 16vw;
+        width: auto;
+    }
 }
 
 .historia{
-    margin: 3rem 3rem 2rem 3rem;
+    margin: 3rem 1rem 2rem 1rem;
     grid-area: texto;
 }
+
+.historia p{
+    color:rgb(124, 124, 124);
+    text-align: justify;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.5rem;
+    margin: 0 2rem 0 0;
+}
+
+@media(min-width: 800px){
+    .historia{
+        margin: 3rem 3rem 2rem 3rem;
+        grid-area: texto;
+        width: auto;
+    }
+
+    .historia p{
+        color:rgb(124, 124, 124);
+        text-align: justify;
+    }
+}
+
 
 .historia h3{
     font-size: 25px;
     text-align: center;
 }
 
-.historia p{
-    color:rgb(124, 124, 124);
-    text-align: justify;
-}
+
 
 .historia a{
     text-decoration: none;
     font-size: 1em;
 }
 
+/* Fin presentacion */
+
+/* Inicio footer */
 
 footer{
     background-color:rgb(90, 93, 111);
@@ -208,6 +533,8 @@ footer p{
     color: white;
     font-size: 18px;
 }
+
+/* Fin footer */
 
 .galeria img{
     width: 100%;
