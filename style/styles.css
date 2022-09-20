@@ -276,11 +276,6 @@ footer p{
 
 /* Fin footer */
 
-.galeria img{
-    width: 100%;
-    height: auto;
-}
-
 .contentPagina{
     text-align: center;
 }
@@ -341,6 +336,26 @@ footer p{
 }
 
 /* Fin aviones */
+
+/* Inicio Galeria */
+.galeriaContainer{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeriaContainer img{
+    width: 30%;
+    margin: 2rem;
+}
+
+.h1Galeria{
+    text-align: center;
+    margin: 0 2rem 3rem 2rem;
+}
+
+/* Fin Galeria */
 
 .tarifas p{
     text-align: center;
