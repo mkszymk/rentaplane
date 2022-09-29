@@ -1,0 +1,83 @@
+.presentacion{
+    background-color: rgb(224, 236, 255);
+    padding-top: 3rem;
+
+    h2{
+        border-bottom: 1px solid rgb(181, 188, 197);
+        margin: 0 3rem 0 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.whoAreWe{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "imagen" "texto";
+    height: 100%;
+
+    div{
+        margin-left: 2rem;
+        grid-area: imagen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        margin-left: -1rem;
+        margin-top: 2rem;
+        height: 40vw;
+        width: auto;
+    }
+}
+
+@media(min-width: 800px){
+    .whoAreWe{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-areas: "imagen texto";
+        height: 100%;
+
+        img{
+            height: 16vw;
+            width: auto;
+        }
+    }
+}
+
+.historia{
+    margin: 3rem 1rem 2rem 1rem;
+    grid-area: texto;
+
+    p{
+        color:rgb(124, 124, 124);
+        text-align: justify;
+        width: 100%;
+        padding: 0;
+        padding-top: 1.5rem;
+        margin: 0 2rem 0 0;
+    }
+
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 800px){
+    .historia{
+        margin: 3rem 3rem 2rem 3rem;
+        grid-area: texto;
+        width: auto;
+
+        p{
+            color:rgb(124, 124, 124);
+            text-align: justify;
+        }
+    }
+}
