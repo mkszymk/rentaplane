@@ -1,24 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&display=swap");
-.logoImg {
-  width: 60px;
-  height: auto;
-  margin-right: 1.5rem;
-  margin-left: 0.5rem;
-}
-
-.navbar {
-  background-color: rgb(143, 186, 255);
-}
-
-.navbar-brand {
-  font-size: 30px;
-}
-
-.nav-link {
-  font-size: 22px;
-  margin: 0 1rem 0 1rem;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -59,6 +39,26 @@ body {
 
 .subrayado {
   border-bottom: 1px solid black;
+}
+
+.logoImg {
+  width: 60px;
+  height: auto;
+  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.navbar {
+  background-color: rgb(143, 186, 255);
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 22px;
+  margin: 0 1rem 0 1rem;
 }
 
 .bienvenida {
@@ -298,12 +298,71 @@ footer p {
   margin: 0 2rem 3rem 2rem;
 }
 
-.tarifas p {
-  text-align: center;
+.planes {
+  padding: 2rem 4rem 1rem 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.tarifas section {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+.planes .col-sm-auto {
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+}
+.planes .col-sm-auto .card {
+  height: 100%;
+}
+.planes .col-sm-auto .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.planes .col-sm-auto .card .card-body img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 550px) {
+  .planes .col-sm-auto .card .card-body img {
+    width: 400px;
+  }
+}
+.planes .col-sm-auto .card .card-body .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.planes .col-sm-auto .card .card-body .card-text h5 {
+  font-weight: 800;
+  font-size: 26px;
+}
+.planes .col-sm-auto .card .card-body .card-text p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0;
+}
+.planes .col-sm-auto .card .card-body .card-text a {
+  width: 80%;
+}
+@media (min-width: 800px) {
+  .planes {
+    flex-direction: row;
+  }
+  .planes .col-sm-auto {
+    width: 28%;
+    margin: 0 1rem 0 1rem;
+  }
+  .planes .col-sm-auto .card .card-body {
+    justify-content: flex-start;
+  }
+  .planes .col-sm-auto .card .card-body img {
+    width: 70%;
+  }
+  .planes .col-sm-auto .card .card-body .card-text a {
+    margin-top: 1rem;
+  }
 }
 
 .formularioContacto label {

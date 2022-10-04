@@ -1,0 +1,72 @@
+.planes{
+    padding: 2rem 4rem 1rem 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .col-sm-auto{
+        width: 100%;
+        margin: 1rem 0 2rem 0;
+        .card{
+            height: 100%;
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                @media(min-width: 550px){
+                    img{
+                        width: 400px;
+                    }
+                }
+                .card-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                    h5{
+                        font-weight: 800;
+                        font-size: 26px;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 0;
+                    }
+                    a{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    @media(min-width: 800px){
+        flex-direction: row;
+        .col-sm-auto{
+            width: 28%;
+            margin: 0 1rem 0 1rem;
+            .card{
+                .card-body{
+                    justify-content: flex-start;
+                    img{
+                        width: 70%;
+                    }
+                    .card-text{
+                        a{
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
