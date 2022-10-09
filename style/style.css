@@ -376,12 +376,20 @@ footer p {
 }
 .formularioContacto textarea {
   resize: none;
-  width: 30rem;
+  width: 75%;
   height: 10rem;
   font-size: 1.3rem;
 }
 .formularioContacto input {
-  width: 30rem;
+  width: 75%;
   height: 2rem;
   font-size: 1.3rem;
+}
+@media (min-width: 730px) {
+  .formularioContacto input {
+    width: 548px;
+  }
+  .formularioContacto textarea {
+    width: 548px;
+  }
 }/*# sourceMappingURL=style.css.map */
