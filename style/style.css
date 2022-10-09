@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -39,6 +39,7 @@ body {
 
 .subrayado {
   border-bottom: 1px solid black;
+  width: 80%;
 }
 
 .logoImg {
@@ -54,6 +55,7 @@ body {
 
 .navbar-brand {
   font-size: 30px;
+  font-weight: 300;
 }
 
 .nav-link {
@@ -67,6 +69,7 @@ body {
 .bienvenida h2 {
   text-align: center;
   font-size: 35px;
+  font-weight: 500;
 }
 
 .pasosRenta {
@@ -77,9 +80,11 @@ body {
 .pasosRenta h3 {
   font-size: 28px;
   text-align: center;
+  font-weight: 400;
 }
 .pasosRenta p {
-  color: rgb(124, 124, 124);
+  font-weight: 300;
+  color: rgb(65, 65, 65);
   text-align: justify;
   padding: 2rem;
 }
@@ -89,8 +94,6 @@ body {
     margin: 3rem 2rem 5rem 2rem;
   }
   .pasosRenta {
-    margin-top: 2rem;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -98,9 +101,7 @@ body {
     width: 33.3%;
   }
   .pasosRenta p {
-    color: rgb(124, 124, 124);
     width: auto;
-    text-align: justify;
   }
 }
 .portadaPrincipal {
@@ -119,6 +120,7 @@ body {
   padding: 0;
   text-align: center;
   width: 100%;
+  font-weight: 400;
 }
 
 @media (min-width: 400px) {
@@ -158,6 +160,7 @@ body {
   border-bottom: 1px solid rgb(181, 188, 197);
   margin: 0 3rem 0 3rem;
   padding-bottom: 1rem;
+  font-weight: 500;
 }
 
 .whoAreWe {
@@ -197,7 +200,8 @@ body {
   grid-area: texto;
 }
 .historia p {
-  color: rgb(124, 124, 124);
+  color: rgb(65, 65, 65);
+  font-weight: 300;
   text-align: justify;
   width: 100%;
   padding: 0;
@@ -207,6 +211,7 @@ body {
 .historia h3 {
   font-size: 25px;
   text-align: center;
+  font-weight: 400;
 }
 .historia a {
   text-decoration: none;
@@ -220,7 +225,6 @@ body {
     width: auto;
   }
   .historia p {
-    color: rgb(124, 124, 124);
     text-align: justify;
   }
 }
@@ -233,6 +237,7 @@ footer {
   text-align: center;
 }
 footer p {
+  margin-top: 1.5rem;
   color: white;
   font-size: 18px;
 }
@@ -261,24 +266,27 @@ footer p {
   padding-bottom: 1rem;
   box-shadow: 0 0 8px -4px black;
 }
-.listaAviones div p {
+.listaAviones .planeItem p {
   padding: 0 1rem 0rem 1rem;
   height: 5rem;
   width: auto;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
 }
-.listaAviones h5 {
+.listaAviones .planeItem h5 {
   margin-top: 1rem;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 500;
 }
-.listaAviones .precio {
+.listaAviones .planeItem h6 {
+  font-weight: 400;
+}
+.listaAviones .planeItem .precio {
   height: 2rem;
   margin-bottom: 1rem;
-  margin-top: 0;
-  font-weight: 200;
+  margin-top: 2rem;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -291,11 +299,6 @@ footer p {
 .galeriaContainer img {
   width: 30%;
   margin: 2rem;
-}
-
-.h1Galeria {
-  text-align: center;
-  margin: 0 2rem 3rem 2rem;
 }
 
 .planes {
@@ -335,13 +338,15 @@ footer p {
   height: 100%;
 }
 .planes .col-sm-auto .card .card-body .card-text h5 {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 26px;
 }
 .planes .col-sm-auto .card .card-body .card-text p {
+  margin-top: 1rem;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 200;
   padding: 0;
+  text-align: center;
 }
 .planes .col-sm-auto .card .card-body .card-text a {
   width: 80%;

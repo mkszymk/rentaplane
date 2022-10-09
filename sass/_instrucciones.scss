@@ -5,6 +5,7 @@
     h2{
         text-align: center;
         font-size: 35px;
+        font-weight: 500;
     }
 }
 
@@ -16,10 +17,12 @@
     h3{
         font-size: 28px;
         text-align: center;
+        font-weight: 400;
     }
 
     p{
-        color:rgb(124, 124, 124);
+        font-weight: 300;
+        color: $pcolor;
         text-align: justify;
         padding: 2rem;
     }
@@ -31,8 +34,6 @@
     }
 
     .pasosRenta{
-        margin-top: 2rem;
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
 
@@ -41,9 +42,7 @@
         }
 
         p{
-            color:rgb(124, 124, 124);
             width: auto;
-            text-align: justify;
         }
     }
 }
