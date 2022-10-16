@@ -15,8 +15,7 @@
                 justify-content: center;
                 align-items: center;
                 img{
-                    width: 100%;
-                    height: auto;
+                    @include sizes(100%, auto);
                 }
                 @media(min-width: 550px){
                     img{

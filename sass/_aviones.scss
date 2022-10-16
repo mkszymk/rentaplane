@@ -8,14 +8,12 @@
 
     img{
         object-fit: cover;
-        width: 20rem;
-        height: 20rem;
+        @include sizes(20rem, 20rem);
     }
 
     .planeItem{
         margin: 0 1rem 2rem 1rem;
-        width: 20rem;
-        height: auto;
+        @include sizes(20rem, auto);
         border: 1px solid gainsboro;
         border-radius: 4px;
         overflow: hidden;
@@ -51,8 +49,5 @@
             font-weight: 300;
             font-size: 20px;
         }
-
     }
-
-    
 }

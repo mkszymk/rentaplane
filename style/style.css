@@ -176,11 +176,43 @@ body {
   align-items: center;
   justify-content: center;
 }
-.whoAreWe img {
+.whoAreWe div img {
   margin-left: -1rem;
   margin-top: 2rem;
-  height: 40vw;
   width: auto;
+  height: 40vw;
+}
+.whoAreWe .historia {
+  margin: 3rem 1rem 2rem 1rem;
+  grid-area: texto;
+}
+.whoAreWe .historia p {
+  color: rgb(65, 65, 65);
+  font-weight: 300;
+  text-align: justify;
+  width: 100%;
+  padding: 0;
+  padding-top: 1.5rem;
+  margin: 0 2rem 0 0;
+}
+.whoAreWe .historia h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+.whoAreWe .historia a {
+  text-decoration: none;
+  font-size: 1em;
+}
+@media (min-width: 800px) {
+  .whoAreWe .historia {
+    margin: 3rem 3rem 2rem 3rem;
+    grid-area: texto;
+    width: auto;
+  }
+  .whoAreWe .historia p {
+    text-align: justify;
+  }
 }
 
 @media (min-width: 800px) {
@@ -190,42 +222,9 @@ body {
     grid-template-areas: "imagen texto";
     height: 100%;
   }
-  .whoAreWe img {
+  .whoAreWe div img {
+    width: auto;
     height: 16vw;
-    width: auto;
-  }
-}
-.historia {
-  margin: 3rem 1rem 2rem 1rem;
-  grid-area: texto;
-}
-.historia p {
-  color: rgb(65, 65, 65);
-  font-weight: 300;
-  text-align: justify;
-  width: 100%;
-  padding: 0;
-  padding-top: 1.5rem;
-  margin: 0 2rem 0 0;
-}
-.historia h3 {
-  font-size: 25px;
-  text-align: center;
-  font-weight: 400;
-}
-.historia a {
-  text-decoration: none;
-  font-size: 1em;
-}
-
-@media (min-width: 800px) {
-  .historia {
-    margin: 3rem 3rem 2rem 3rem;
-    grid-area: texto;
-    width: auto;
-  }
-  .historia p {
-    text-align: justify;
   }
 }
 footer {
@@ -295,10 +294,6 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.galeriaContainer img {
-  width: 30%;
-  margin: 2rem;
 }
 
 .planes {

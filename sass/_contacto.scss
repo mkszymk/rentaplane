@@ -5,14 +5,12 @@
     }
     textarea{
         resize: none;
-        width: 75%;
-        height: 10rem;
+        @include sizes(75%, 10rem);
         font-size: 1.3rem;
     }
 
     input{
-        width: 75%;
-        height: 2rem;
+        @include sizes(75%, 2rem);
         font-size: 1.3rem;
     }
 

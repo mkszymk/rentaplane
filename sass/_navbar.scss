@@ -1,6 +1,5 @@
 .logoImg{
-    width: 60px;
-    height: auto;
+    @include sizes(60px, auto);
     margin-right: 1.5rem;
     margin-left: 0.5rem;
 }
