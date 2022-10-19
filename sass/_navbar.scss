@@ -1,19 +1,43 @@
-.logoImg{
-    @include sizes(60px, auto);
-    margin-right: 1.5rem;
-    margin-left: 0.5rem;
-}
+
 
 .navbar{
     background-color: rgb(143, 186, 255);
+
+    .mainLogo{
+
+        .navbar-brand{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            p{
+                font-size: 30px;
+                font-weight: 300;
+                margin: 0;
+            }
+    
+            .logoImg{
+                @include sizes(60px, auto);
+                margin-right: 1.5rem;
+                margin-left: 0.5rem;
+            }
+    
+            .logoImg:hover{
+                scale: 1.1;
+            }
+        }
+    }
+    
+    .nav-link{
+        font-size: 22px;
+        margin: 0 1rem 0.5rem 1rem;
+        padding-bottom: 0;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    .nav-link:hover{
+        scale: 1.15;
+    }
 }
 
-.navbar-brand{
-    font-size: 30px;
-    font-weight: 300;
-}
 
-.nav-link{
-    font-size: 22px;
-    margin: 0 1rem 0 1rem;
-}

@@ -42,25 +42,37 @@ body {
   width: 80%;
 }
 
-.logoImg {
+.navbar {
+  background-color: rgb(143, 186, 255);
+}
+.navbar .mainLogo .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .mainLogo .navbar-brand p {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+.navbar .mainLogo .navbar-brand .logoImg {
   width: 60px;
   height: auto;
   margin-right: 1.5rem;
   margin-left: 0.5rem;
 }
-
-.navbar {
-  background-color: rgb(143, 186, 255);
+.navbar .mainLogo .navbar-brand .logoImg:hover {
+  scale: 1.1;
 }
-
-.navbar-brand {
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.nav-link {
+.navbar .nav-link {
   font-size: 22px;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 0.5rem 1rem;
+  padding-bottom: 0;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.navbar .nav-link:hover {
+  scale: 1.15;
 }
 
 .bienvenida {
@@ -290,10 +302,11 @@ footer p {
 }
 
 .galeriaContainer {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 80%;
+}
+.galeriaContainer .galeriaItems img {
+  width: 25rem;
+  height: auto;
 }
 
 .planes {

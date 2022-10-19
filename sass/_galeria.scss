@@ -1,7 +1,12 @@
 .galeriaContainer{
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 80%;
 
+
+    .galeriaItems{
+
+
+        img{
+            @include sizes(25rem, auto);
+        }
+    }
 }
