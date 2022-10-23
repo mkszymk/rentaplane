@@ -302,11 +302,34 @@ footer p {
 }
 
 .galeriaContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.galeriaContainer .galeriaItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 80%;
 }
 .galeriaContainer .galeriaItems img {
-  width: 25rem;
+  width: 100%;
   height: auto;
+  margin: 0rem 1rem 1rem 1rem;
+  transition: 0.2s;
+}
+.galeriaContainer .galeriaItems img:hover {
+  scale: 1.12;
+  box-shadow: 0 0 40px -4px black;
+}
+@media (min-width: 450px) {
+  .galeriaContainer .galeriaItems {
+    width: 95%;
+  }
+  .galeriaContainer .galeriaItems img {
+    width: 360px;
+    height: auto;
+  }
 }
 
 .planes {
