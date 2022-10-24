@@ -1,4 +1,6 @@
 $pcolor: rgb(65, 65, 65);
+$inColor: rgb(203, 218, 224);
+$inColorFocus: rgb(102, 184, 223);
 
 @mixin sizes($ancho, $alto){
     width: $ancho;

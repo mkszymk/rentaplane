@@ -410,11 +410,33 @@ footer p {
   width: 75%;
   height: 10rem;
   font-size: 1.3rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid rgb(203, 218, 224);
 }
 .formularioContacto input {
   width: 75%;
   height: 2rem;
   font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(203, 218, 224);
+}
+.formularioContacto input:focus {
+  border-bottom: 1px solid rgb(102, 184, 223);
+}
+.formularioContacto textarea:focus {
+  border: 1px solid rgb(102, 184, 223);
+}
+.formularioContacto .btnEnviar {
+  background-color: rgb(220, 231, 255);
+  transition: 0.2s;
+}
+.formularioContacto .btnEnviar:hover {
+  scale: 1.04;
+  background-color: rgb(166, 196, 255);
 }
 @media (min-width: 730px) {
   .formularioContacto input {
